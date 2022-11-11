@@ -1,0 +1,26 @@
+### Get all task
+GET http://localhost:3000/todo HTTP/1.1
+
+### Get one task
+GET http://localhost:3000/todo/636b2260fe912bf33f64d4c4 HTTP/1.1
+
+### Create Task
+POST http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Go to Owanbe",
+    "description": "Wear ankara and fila",
+    "admin": true
+}
+
+### Update Task
+PUT http://localhost:3000/todo/636e4da50b9d2c922c919aaf HTTP/1.1
+Content-Type: application/json
+
+{
+    "isAdmin": true
+}
+
+### Delete Task
+DELETE http://localhost:3000/todo/636e4de70b9d2c922c919ab3 HTTP/1.1
